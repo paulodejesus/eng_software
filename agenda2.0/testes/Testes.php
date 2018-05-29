@@ -6,7 +6,7 @@ require_once '../assets/PHP/permissoes.php';
 	
 //teste que verifica se a busca dos usuarios não falhou
 class TestLogin extends UnitTestCase{
-	function testbuscaUsuario(){
+	function testbuscaUsuario(){	
 		$teste = new pessoa();
 		
 		$this->assertTrue($teste->buscaUsuario());
