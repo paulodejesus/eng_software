@@ -28,10 +28,10 @@ class conexao
         // Já existe uma instância?
         if (self::$instance == NULL)
             self::$instance = new conexao();   // Não existe, cria a instância 
-        return self::$instance;                // Já existe, simplesmente retorna
+        return self::$instance;                     // Já existe, simplesmente retorna
     }
 
-    // Previne o uso de __clone
+    // Previne o uso de clone
     private function __clone() {}
      public function getCon(){
         return $this->conn;

@@ -7,38 +7,44 @@ interface tipoPermissao{
 
 class Administrador implements tipoPermissao{
 	public function permissao(){		
-		$_SESSION['variavel'] = 'Administrador';
+		$_SESSION['variavel'] = '0';
 		return 'Administrador';
-	}		//Sera implementado o que o este usuario tem permissao
+	}	
+	//Sera implementado o que o este usuario tem permissao
 }
+
 class Secretaria implements tipoPermissao{
 	public function permissao(){
-		$_SESSION['variavel'] = 'Secretaria';
+		$_SESSION['variavel'] = '1';
 		return 'Secretaria';
 	}
 }
+
 class Outro implements tipoPermissao{
 	public function permissao(){
-		$_SESSION['variavel'] = 'Outro';
+		$_SESSION['variavel'] = '2';
 		return 'Outro';
 	}
 }
+
 //desgin pattern Factory
 class Factory{
 	public function retornaPermissao(){
 		$permissao = $_SESSION['variavel'];
 		if($permissao == '0'){
 			$pe = new Administrador();
-			$re = $pe -> permissao();
-			return $re;
+			//$re = $pe -> permissao();
+			return $pe;
 		}elseif($permissao == '1'){
 			$pe = new Secretaria();
-			$re = $pe -> permissao();				
-			return $re;
-		}else{
+			//$re = $pe -> permissao();				
+			return $pe;
+		}elseif($permissao == '2'){
+			
 			$pe = new Outro();
-			$re = $pe -> permissao();				
-			return $re;
+			//$re = $pe -> permissao();				
+
+			return $pe;
 		}
 	}
 

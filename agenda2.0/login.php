@@ -15,17 +15,14 @@
 		</div>
 
 	  <div class="container">
-		<label for="uname"><b>Username</b></label>
+		<label for="uname"><b>Usuário</b></label>
 		<input type="text" placeholder="Username" name="email" required>
 
-		<label for="psw"><b>Password</b></label>
+		<label for="psw"><b>Senha</b></label>
 		<input type="password" placeholder="Password" name="senha" required>
-		<input type="submit" name="Entrar" value="Entrar">
-		<input type="button" name="cancelar"  />
 
-		<label>
-		  <input type="checkbox" checked="checked" name="remember"> Remember me
-		</label>
+
+	
 	  </div>
 	  <p class="text-center text danger">
 			<?php 
@@ -38,8 +35,8 @@
 	  </p>
 
 	  <div class="container" style="background-color:#f1f1f1">
-		<button type="button" class="cancelbtn">Cancel</button>
-		<span class="psw">Forgot <a href="#">password?</a></span>
+		<button class="btnLimpar" type="reset"  name="clear" >Limpar</button>
+		<button class="btnEntrar" type="submit" name="Entrar" value="Entrar">Entrar</button> 
 	  </div>
 	</form>
 </body>

@@ -5,7 +5,7 @@
 
 	$re = new pessoa();
 	$resultado = $re->inserirDados();
-	 header("Refresh: 0; ../../telaPrincipal.php");
+	 header("Location: ../../telaPrincipal.php");
 
 /*
 	$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
