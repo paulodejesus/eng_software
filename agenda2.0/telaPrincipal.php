@@ -90,7 +90,7 @@
 	<?php  
 	//session_start();
 	$permissao = $_SESSION['variavel'];	
-	if($permissao == '2'){}else{
+	if($permissao == '1'){}else{
 	?>
 		<button class="btnMenu" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">ADD NOVO CONTATO</button>
 	<?php } ?>
