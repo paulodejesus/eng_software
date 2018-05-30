@@ -7,7 +7,7 @@
 	<?php  
 		session_start();
 		$permissao = $_SESSION['variavel'];
-		if($permissao == '2'){
+		if($permissao == '1'){
 			//echo  "<script>alert('Acesso Negado');</script>";
 			header("Location: ../../telaPrincipal.php");
 
