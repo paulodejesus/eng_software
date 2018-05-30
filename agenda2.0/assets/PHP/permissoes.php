@@ -13,37 +13,21 @@ class Administrador implements tipoPermissao{
 	//Sera implementado o que o este usuario tem permissao
 }
 
-class Secretaria implements tipoPermissao{
+class Usuario implements tipoPermissao{
 	public function permissao(){
 		$_SESSION['variavel'] = '1';
-		return 'Secretaria';
+		return 'Usuario';
 	}
 }
-
-class Outro implements tipoPermissao{
-	public function permissao(){
-		$_SESSION['variavel'] = '2';
-		return 'Outro';
-	}
-}
-
 //desgin pattern Factory
 class Factory{
 	public function retornaPermissao(){
 		$permissao = $_SESSION['variavel'];
 		if($permissao == '0'){
-			$pe = new Administrador();
-			//$re = $pe -> permissao();
+			$pe = new Administrador();			
 			return $pe;
 		}elseif($permissao == '1'){
-			$pe = new Secretaria();
-			//$re = $pe -> permissao();				
-			return $pe;
-		}elseif($permissao == '2'){
-			
-			$pe = new Outro();
-			//$re = $pe -> permissao();				
-
+			$pe = new Usuario();			
 			return $pe;
 		}
 	}
