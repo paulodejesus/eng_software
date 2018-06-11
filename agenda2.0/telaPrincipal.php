@@ -35,7 +35,7 @@
 		?>
 		</label> 
 		<div class="teste2">
-			<img src="assets/images/icons/logo.png">
+			<img src="assets/images/logo/logo.png">
 		</div>
 	</div>
 </div>
