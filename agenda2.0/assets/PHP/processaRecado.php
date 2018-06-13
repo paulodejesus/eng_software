@@ -9,7 +9,7 @@ if (isset($_POST['texto'])) {
    fclose($arquivo);
 }
 header("Refresh: 0; ../../telaPrincipal.php");
-
+/*
 class Recado{
 	public function lerRecado(){
 	// Abre o Arquvio no Modo r (para leitura)
@@ -28,4 +28,5 @@ class Recado{
 	}
 	
 }
+*/
 ?>
