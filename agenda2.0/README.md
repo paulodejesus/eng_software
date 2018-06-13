@@ -5,7 +5,7 @@ A aplicação Contacts.com ® é um projeto da disciplina [11792 ] - Engenharia de S
 Equipe:
 
 Paulo Roberto de Jesus - Gerente de Projetos e Desenvolvedor Front-end
-Ismal Lawrenz - Desenvolvedor back-end e DBA
+Ismael Lawrenz - Desenvolvedor back-end e DBA
 Jonathan Ferreira - Analista Consultor 
 
 
